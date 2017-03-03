@@ -37,6 +37,6 @@ Run
     sudo rm -rf /usr/share/icons/Arc-Icons-Orange
 
 ### Preview
-![Preview](https://i.imgur.com/8CI9iim.png)
+![Preview](https://i.imgur.com/Iyxz3IO.png)
 
 License: GPLv3
