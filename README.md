@@ -6,8 +6,7 @@ This is a fork of the Arc Icon theme at https://github.com/horst3180/arc-icon-th
 
 This Icons pack is modified to inherit [Paper icon](https://github.com/snwh/paper-gtk-theme) set for missing icons instead of Moka. If Paper icon is not installed it will use the Gnome icon theme as fallback.
 
-This theme doesn't provide application icons, it needs another icon theme to inherit them.
-By default this theme will look for the [Paper icon](https://github.com/snwh/paper-gtk-theme) to get the missing icons. If Moka is not installed it will use the Gnome icon theme as fallback.
+By default this icon set will look for the [Paper icon](https://github.com/snwh/paper-gtk-theme) to get the missing icons. If Moka is not installed it will use the Gnome icon theme as fallback.
 To change the application icons, edit `Arc/index.theme` and replace `Paper` with the name of your preferred icon theme
 
 For example, if you like the Faenza icon theme, change
