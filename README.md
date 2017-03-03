@@ -1,20 +1,20 @@
-# Arc Icon Theme
+# Arc Orange Icon Theme
 
-**Note:** This is still unfinished. It may not work as expected in some cases.
-
-At the moment this theme mainly includes icons for folders and mimetypes.
+This is a fork of the Arc Icon theme at https://github.com/horst3180/arc-icon-theme, but with colored icons with orange to fit with Ubuntu 16.04 Xenial and Unity original icons.
 
 ### Requirements
 
+This Icons pack is modified to inherit [Paper icon](https://github.com/snwh/paper-gtk-theme) set for missing icons instead of Moka. If Paper icon is not installed it will use the Gnome icon theme as fallback.
+
 This theme doesn't provide application icons, it needs another icon theme to inherit them.
-By default this theme will look for the [Moka icon theme](https://snwh.org/moka) to get the missing icons. If Moka is not installed it will use the Gnome icon theme as fallback.
-To change the application icons, edit `Arc/index.theme` and replace `Moka` with the name of your preferred icon theme
+By default this theme will look for the [Paper icon](https://github.com/snwh/paper-gtk-theme) to get the missing icons. If Moka is not installed it will use the Gnome icon theme as fallback.
+To change the application icons, edit `Arc/index.theme` and replace `Paper` with the name of your preferred icon theme
 
 For example, if you like the Faenza icon theme, change
 
     [Icon Theme]
     Name=Arc
-    Inherits=Moka,Adwaita,gnome,hicolor
+    Inherits=Paper,Adwaita,gnome,hicolor
     Comment=Arc Icon theme
 
 to
@@ -26,25 +26,19 @@ to
 
 ### Installation
 
-Installation via autotools:
+Run the following to install the icon set:
 
-    git clone https://github.com/horst3180/arc-icon-theme --depth 1 && cd arc-icon-theme
-    ./autogen.sh --prefix=/usr
-    sudo make install
-
-Alternatively you may copy the `Arc` folder to `~/.icons` or to `/usr/share/icons` for system-wide use.
+    git clone https://github.com/chaouimar1/arc-orange-icon-theme.git
+    cd arc-orange-icon-theme
+    sudo cp -R ./Arc-Icons-Orange/ /usr/share/icons/
 
 ### Uninstall
 
 Run
 
-    sudo make uninstall
-
-from the same directory as this README resides in, or
-
-    sudo rm -rf /usr/share/icons/Arc
+    sudo rm -rf /usr/share/icons/Arc-Icons-Orange
 
 ### Preview
-![Preview](https://i.imgur.com/yCO1aeP.png)
+![Preview](https://i.imgur.com/8CI9iim.png)
 
 License: GPLv3
